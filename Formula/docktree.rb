@@ -5,21 +5,21 @@
 class Docktree < Formula
   desc "Run Docker Compose services across multiple git worktrees without port conflicts"
   homepage "https://github.com/Bnjoroge1/Docktree"
-  version "1.1.0"
+  version "0.1.8"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Bnjoroge1/Docktree/releases/download/v1.1.0/docktree_1.1.0_darwin_amd64.tar.gz"
-      sha256 "e96990fe9bb76a7bf1bc32afd258e665813f4ecb67e42e3f5b6f48a271ca8ca8"
+      url "https://github.com/Bnjoroge1/Docktree/releases/download/v0.1.8/docktree_0.1.8_darwin_amd64.tar.gz"
+      sha256 "0505b14549f6a3fcd0e11fcab142bb9afd64e88cd2987b54abca34373638293a"
 
       define_method(:install) do
         bin.install "docktree"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Bnjoroge1/Docktree/releases/download/v1.1.0/docktree_1.1.0_darwin_arm64.tar.gz"
-      sha256 "827e66d7cd339523d278fbce62f1f8e5adf34b13218868e3fac256385ac1ba8f"
+      url "https://github.com/Bnjoroge1/Docktree/releases/download/v0.1.8/docktree_0.1.8_darwin_arm64.tar.gz"
+      sha256 "57c383c9eee316bea5eaa6907fe5c9ef4739d926bfcc86d9b1a087f7cb1c6874"
 
       define_method(:install) do
         bin.install "docktree"
@@ -29,15 +29,15 @@ class Docktree < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Bnjoroge1/Docktree/releases/download/v1.1.0/docktree_1.1.0_linux_amd64.tar.gz"
-      sha256 "7940d4c2bdf74ff28e1dcdf91bdf333dd2d3ecd2846b15227e067f38face4079"
+      url "https://github.com/Bnjoroge1/Docktree/releases/download/v0.1.8/docktree_0.1.8_linux_amd64.tar.gz"
+      sha256 "60bb63cd7b29348bc9b27bbcfca0a9d55fd4ab106b80fcfe6387a4f5b97aa64b"
       define_method(:install) do
         bin.install "docktree"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Bnjoroge1/Docktree/releases/download/v1.1.0/docktree_1.1.0_linux_arm64.tar.gz"
-      sha256 "f72c7bbd21c5f4d3f84bf9b937b86d0d4e8896db3336a4eba1ec7b187adc2894"
+      url "https://github.com/Bnjoroge1/Docktree/releases/download/v0.1.8/docktree_0.1.8_linux_arm64.tar.gz"
+      sha256 "c6a921e8c97df1e8afb0c6e59fddeba891e0d50ea7694ea5c88beb684d05bc3c"
       define_method(:install) do
         bin.install "docktree"
       end
