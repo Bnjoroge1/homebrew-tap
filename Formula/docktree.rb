@@ -11,7 +11,7 @@ class Docktree < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/Bnjoroge1/Docktree/releases/download/v0.1.8/docktree_0.1.8_darwin_amd64.tar.gz"
-      sha256 "44ab17e5b76b61709a88cbc116c288e36db638e109a4ef8c908d39b86f93d278"
+      sha256 "7a91367f177f1eb5ad14e801077bf683ef5d8efc66dbad0e41107c1df3f39312"
 
       define_method(:install) do
         bin.install "docktree"
@@ -19,7 +19,7 @@ class Docktree < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/Bnjoroge1/Docktree/releases/download/v0.1.8/docktree_0.1.8_darwin_arm64.tar.gz"
-      sha256 "4907c8c92c0d16a1cad28bde437f730df2e1862493900621bfa63ab03102cec3"
+      sha256 "56ce77cbe5e6260335fe4f4c99738295926b1007be3a6c58127e3ea3187e347f"
 
       define_method(:install) do
         bin.install "docktree"
@@ -30,14 +30,14 @@ class Docktree < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/Bnjoroge1/Docktree/releases/download/v0.1.8/docktree_0.1.8_linux_amd64.tar.gz"
-      sha256 "aca19b3d58aea5310463c5d28ec4c2d98b666b6b12b2358bac3f64a0d25247d8"
+      sha256 "9c3020c511775e80e4d095335ecc7887ea56566982d356fa51237e9744b0e6d7"
       define_method(:install) do
         bin.install "docktree"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/Bnjoroge1/Docktree/releases/download/v0.1.8/docktree_0.1.8_linux_arm64.tar.gz"
-      sha256 "bf3391b10f062c61819fb01e9009083b92f6848ab65c20d33d94d15148e57668"
+      sha256 "396099c4a38d8d2bd875dc25c172a3d71e7981035da3147653a6a82317e0e999"
       define_method(:install) do
         bin.install "docktree"
       end
